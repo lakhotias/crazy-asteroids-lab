@@ -1,6 +1,5 @@
 {
-  "$schema": "https://openapi.vercel.sh/vercel.json",
-  "installCommand": "python3 -m pip install pygbag",
-  "buildCommand": "python3 -m pygbag --build .",
+  "installCommand": "python3 -m venv .venv && .venv/bin/pip install --upgrade pip && .venv/bin/pip install pygbag",
+  "buildCommand": ".venv/bin/python -m pygbag --build .",
   "outputDirectory": "build/web"
 }
